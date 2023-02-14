@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>the square menu</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/coordinates.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box">
+      <div class="text">
+        <div id="container">
+          <span id="text1"></span>
+          <span id="text2"></span>
+      </div>
+      
+      <svg id="filters">
+          <defs>
+              <filter id="threshold">
+                  <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 255 -140" />
+              </filter>
+          </defs>
+      </svg>
+      </div>
+      <div class="heart"></div>
+      <div class="heart1"></div>
+      <div class="heart2"></div>
+      <div class="heart3"></div>
+      <div class="heart4"></div>
+      <div class="heart5"></div>
+      <div class="heart6"></div>
+      <div class="heart7"></div>
+      <div class="heart8"></div>
+    </div>
+  </div>  
+    <script src="./js/heart.js"></script>
+    <script src="./js/text.js"></script>
+  </body>
+</html>

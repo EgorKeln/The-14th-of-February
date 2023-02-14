@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: url('../img/5.png'); 
+}
+
+.wrapper {
+    /*border: 5px solid rgb(255, 0, 140);*/
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    /*border: 5px solid rgb(0, 195, 255);*/
+    position: relative;
+    display: flex;
+    height: 600px;
+    width: 390px;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    /*border: 5px solid rgb(0, 195, 255);*/
+    position: relative;
+    display: flex;
+    height: 400px;
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
+}
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 40pt;
+    text-align: center;
+    user-select: none;
+}
+/*------------------------------------------------------------ heart */
+.heart {
+    animation: heartbeat 1.5s infinite;
+    animation-delay: 0s;
+    background-color:rgb(69, 1, 1);
+    display: flex;
+    position: absolute;
+    transform: rotate(-45deg);
+    height: 180px;
+    width: 180px;
+    opacity: 0.1;
+    z-index: 1
+}
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color:rgb(69, 1, 1);
+    border-radius: 50%;
+    height: 180px;
+    position: absolute;
+    width: 180px;
+    z-index: 1
+}
+  .heart:before {
+    top: -95px;
+    left: 0;
+}
+  .heart:after {
+    left: 95px;
+    top: 0;
+}
+@keyframes heartbeat {
+    0%{
+      transform: scale( 1 )
+      rotate(-45deg);    
+    }
+    20%{
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+    40%{
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+    50%{
+        transform: scale( 1.5 )
+          rotate(-45deg);
+    }
+}
+/*------------------------------------------------------------ heart 1 */
+.heart1 {
+    animation: heartbeat1 1.5s infinite;
+    animation-delay: 0s;
+    background-color:rgb(93, 4, 4);
+    display: flex;
+    position: absolute;
+    transform: rotate(-45deg);
+    height: 160px;
+    width: 160px;
+    opacity: 0.2;
+    z-index: 2
+}
+  .heart1:before,
+  .heart1:after {
+    content: "";
+    background-color:rgb(93, 4, 4);
+    border-radius: 50%;
+    height: 160px;
+    position: absolute;
+    width: 160px;
+    z-index: 2
+}
+  .heart1:before {
+    top: -85px;
+    left: 0;
+}
+  .heart1:after {
+    left: 85px;
+    top: 0;
+}
+@keyframes heartbeat1 {
+    0%{
+      transform: scale( 1 )
+      rotate(-45deg);    
+    }
+    20%{
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+    40%{
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+    50%{
+        transform: scale( 1.5 )
+          rotate(-45deg);
+    }
+}
+/*------------------------------------------------------------ heart 2 */
+.heart2 {
+    animation: heartbeat2 1.5s infinite;
+    animation-delay: 0s;
+    background-color:rgb(109, 4, 4);
+    display: flex;
+    position: absolute;
+    transform: rotate(-45deg);
+    height: 140px;
+    width: 140px;
+    opacity: 0.3;
+    z-index: 3
+}
+  .heart2:before,
+  .heart2:after {
+    content: "";
+    background-color:rgb(109, 4, 4);
+    border-radius: 50%;
+    height: 140px;
+    position: absolute;
+    width: 140px;
+    z-index: 3
+}
+  .heart2:before {
+    top: -75px;
+    left: 0;
+}
+  .heart2:after {
+    left: 75px;
+    top: 0;
+}
+@keyframes heartbeat2 {
+    0%{
+      transform: scale( 1 )
+      rotate(-45deg);    
+    }
+    20%{
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+    40%{
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+    50%{
+        transform: scale( 1.5 )
+          rotate(-45deg);
+    }
+}
+/*------------------------------------------------------------ heart 3 */
+.heart3 {
+    animation: heartbeat3 1.5s infinite;
+    animation-delay: 0s;
+    background-color:rgb(109, 4, 4);
+    display: flex;
+    position: absolute;
+    transform: rotate(-45deg);
+    height: 120px;
+    width: 120px;
+    opacity: 0.4;
+    z-index: 4
+}
+  .heart3:before,
+  .heart3:after {
+    content: "";
+    background-color:rgb(109, 4, 4);
+    border-radius: 50%;
+    height: 120px;
+    position: absolute;
+    width: 120px;
+    z-index: 4
+}
+  .heart3:before {
+    top: -65px;
+    left: 0;
+}
+  .heart3:after {
+    left: 65px;
+    top: 0;
+}
+@keyframes heartbeat3 {
+    0%{
+      transform: scale( 1 )
+      rotate(-45deg);    
+    }
+    20%{
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+    40%{
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+    50%{
+        transform: scale( 1.5 )
+          rotate(-45deg);
+    }
+}
+/*------------------------------------------------------------ heart 4 */
+.heart4 {
+    animation: heartbeat4 1.5s infinite;
+    animation-delay: 0s;
+    background-color:rgb(128, 3, 3);
+    display: flex;
+    position: absolute;
+    transform: rotate(-45deg);
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+    z-index: 5
+}
+  .heart4:before,
+  .heart4:after {
+    content: "";
+    background-color:rgb(128, 3, 3);
+    border-radius: 50%;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+    z-index: 5
+}
+  .heart4:before {
+    top: -55px;
+    left: 0;
+}
+  .heart4:after {
+    left: 55px;
+    top: 0;
+}
+@keyframes heartbeat4 {
+    0%{
+      transform: scale( 1 )
+      rotate(-45deg);    
+    }
+    20%{
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+    40%{
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+    50%{
+        transform: scale( 1.5 )
+          rotate(-45deg);
+    }
+}
+/*------------------------------------------------------------ heart 5 */
+.heart5 {
+    animation: heartbeat5 1.5s infinite;
+    animation-delay: 0s;
+    background-color:rgb(152, 4, 4);
+    display: flex;
+    position: absolute;
+    transform: rotate(-45deg);
+    height: 80px;
+    width: 80px;
+    opacity: 0.6;
+    z-index: 6
+}
+  .heart5:before,
+  .heart5:after {
+    content: "";
+    background-color:rgb(152, 4, 4);
+    border-radius: 50%;
+    height: 80px;
+    position: absolute;
+    width: 80px;
+    z-index: 6
+}
+  .heart5:before {
+    top: -45px;
+    left: 0;
+}
+  .heart5:after {
+    left: 45px;
+    top: 0;
+}
+@keyframes heartbeat5 {
+    0%{
+      transform: scale( 1 )
+      rotate(-45deg);    
+    }
+    20%{
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+    40%{
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+    50%{
+        transform: scale( 1.5 )
+          rotate(-45deg);
+    }
+}
+/*------------------------------------------------------------ heart 6 */
+.heart6 {
+    animation: heartbeat6 1.5s infinite;
+    animation-delay: 0s;
+    background-color:rgb(178, 5, 5);
+    display: flex;
+    position: absolute;
+    transform: rotate(-45deg);
+    height: 60px;
+    width: 60px;
+    opacity: 0.7;
+    z-index: 7
+}
+  .heart6:before,
+  .heart6:after {
+    content: "";
+    background-color:rgb(178, 5, 5);
+    border-radius: 50%;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+    z-index: 7
+}
+  .heart6:before {
+    top: -35px;
+    left: 0;
+}
+  .heart6:after {
+    left: 35px;
+    top: 0;
+}
+@keyframes heartbeat6 {
+    0%{
+      transform: scale( 1 )
+      rotate(-45deg);    
+    }
+    20%{
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+    40%{
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+    50%{
+        transform: scale( 1.5 )
+          rotate(-45deg);
+    }
+}
+/*------------------------------------------------------------ heart 7 */
+.heart7 {
+    animation: heartbeat7 1.5s infinite;
+    animation-delay: 0s;
+    background-color:rgb(209, 5, 5);
+    display: flex;
+    position: absolute;
+    transform: rotate(-45deg);
+    height: 40px;
+    width: 40px;
+    opacity: 0.8;
+    z-index: 8
+}
+  .heart7:before,
+  .heart7:after {
+    content: "";
+    background-color:rgb(209, 5, 5);
+    border-radius: 50%;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+    z-index: 8
+}
+  .heart7:before {
+    top: -20px;
+    left: 0;
+}
+  .heart7:after {
+    left: 20px;
+    top: 0;
+}
+@keyframes heartbeat7 {
+    0%{
+      transform: scale( 1 )
+      rotate(-45deg);    
+    }
+    20%{
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+    40%{
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+    50%{
+        transform: scale( 1.5 )
+          rotate(-45deg);
+    }
+}
+/*------------------------------------------------------------ heart 8 */
+.heart8 {
+    animation: heartbeat8 1.5s infinite;
+    animation-delay: 0s;
+    background-color:rgb(249, 6, 6);
+    display: flex;
+    position: absolute;
+    transform: rotate(-45deg);
+    height: 20px;
+    width: 20px;
+    opacity: 0.9;
+    z-index: 9
+}
+  .heart8:before,
+  .heart8:after {
+    content: "";
+    background-color:rgb(249, 6, 6);
+    border-radius: 50%;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    z-index: 9
+}
+  .heart8:before {
+    top: -10px;
+    left: 0;
+}
+  .heart8:after {
+    left: 10px;
+    top: 0;
+}
+@keyframes heartbeat8 {
+    0%{
+      transform: scale( 1 )
+      rotate(-45deg);    
+    }
+    20%{
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+    40%{
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+    50%{
+        transform: scale( 1.5 )
+          rotate(-45deg);
+    }
+}
